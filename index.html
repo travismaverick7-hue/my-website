@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VES Connections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="VES Connections Logo" class="main-logo">
+            </div>
+                
+            <div class="nav-center">
+                 <div class="search-box">
+                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                     <input type="text" id="searchInput" placeholder="Search phones, spares..." onkeyup="filterProducts()">
+                 </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#Sales">Phones</a></li>
+                <li><a href="#Repairs">Repairs</a></li>
+                <li><a href="#Accessories">Accessories</a></li>
+                <li class="cart-icon" onclick="viewCart()">
+                    🛒 <span id="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-container">
+         <video autoplay muted loop playsinline class="bg-video">
+             <source src="video.mp4" type="video/mp4">
+         </video>
+
+    <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Professional Phone Services</h1>
+            <p>Sales • Repairs • Accessories • Spare Parts</p>
+            <button class="btn-primary" onclick="scrollToSection('sales')">Shop Collection</button>
+        </div>
+    </section>
+    
+    <main class="container">
+        <section id="sales" class="container">
+    <h2 class="section-title">Featured Products</h2>
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-badge">New</div>
+            <img src="infinix.jpg" >
+            <div class="product-details">
+                <span class="category">Phones</span>
+                <h3>Infinix Note 30</h3>
+                <p class="price">KSh 22,000</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-badge">Hot</div>
+            <img src="Samsung.jpg">
+            <div class="product-details">
+                <span class="category">Phones</span>
+                <h3>Samsung Galaxy A24</h3>
+                <p class="price">KSh 25,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-badge">Sale</div>
+            <img src="Oraimo.jpg">
+            <div class="product-details">
+                <span class="category">Accessories</span>
+                <h3>Fast Charger</h3>
+                <p class="price">KSh 1,500</p>
+                <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="repairs" class="repair-section">
+            <div class="repair-card">
+    <h2>Book a Repair</h2>
+    <p>Expert service for Tecno, Infinix, itel, Syinix & Oraimo</p>
+    
+    <form id="repairForm">
+        <input type="text" id="phoneModel" placeholder="Phone Model (e.g. Infinix Note 30)" required>
+        
+        <select id="serviceType">
+            <option value="Screen Replacement">Screen Replacement</option>
+            <option value="Battery Replacement">Battery Replacement</option>
+            <option value="Charging Port Repair">Charging Port Repair</option>
+            <option value="Software Update">Software Update</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input type="text" id="customerName" placeholder="Your Name" required>
+        
+        <button type="button" onclick="sendToWhatsApp()" class="btn-submit">
+            <i class="fa-brands fa-whatsapp"></i> Send to WhatsApp
+        </button>
+    </form>
+</div>
+            
+</section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Contact Us</strong> +254 793 757 451</p>
+        </div>
+        <div class="footer-brands">
+            <span>Official Support for: TECNO | INFINIX | ITEL | SYINIX | ORAIMO</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
